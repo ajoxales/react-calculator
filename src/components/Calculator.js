@@ -122,6 +122,7 @@ function Calculator() {
 					</button>
 					<button
 						name="-"
+						onClick={handleClick}
 						className={`${styles.buttonsOrange} col rounded-circle btn btn-primary`}>
 						-
 					</button>

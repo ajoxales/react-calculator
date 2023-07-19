@@ -14,7 +14,7 @@
 	background-color: rgb(49, 49, 49);
 	border-color: rgb(49, 49, 49);
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 29px;
 	height: 75px;
 	width: 75px;
 	margin: 0.25rem;
@@ -24,7 +24,7 @@
 	background-color: rgb(16, 169, 250);
 	border-color: rgb(16, 169, 250);
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 29px;
 	height: 75px;
 	width: 75px;
 	margin: 0.25rem;
@@ -35,7 +35,7 @@
 	border-color: rgb(160, 160, 160);
 	color: black;
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 29px;
 	height: 75px;
 	width: 75px;
 	margin: 0.25rem;
@@ -46,7 +46,7 @@
 		background-color: rgb(49, 49, 49);
 		border-color: rgb(49, 49, 49);
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 29px;
 		height: 65px;
 		width: 65px;
 		margin: 0.25rem;
@@ -56,7 +56,7 @@
 		background-color: rgb(49, 49, 49);
 		border-color: rgb(49, 49, 49);
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 29px;
 		height: 65px;
 		margin: 0.25rem;
 	}
@@ -65,7 +65,7 @@
 		background-color: rgb(16, 169, 250);
 		border-color: rgb(16, 169, 250);
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 29px;
 		height: 65px;
 		width: 65px;
 		margin: 0.25rem;
@@ -76,19 +76,19 @@
 		border-color: rgb(160, 160, 160);
 		color: black;
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 29px;
 		height: 65px;
 		width: 65px;
 		margin: 0.25rem;
 	}
 }
 
-@media only screen and (min-width: 376px) and (max-width: 425px) {
+@media only screen and (min-width: 376px) and (max-width: 429px) {
 	.buttons {
 		background-color: rgb(49, 49, 49);
 		border-color: rgb(49, 49, 49);
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 29px;
 		height: 70px;
 		width: 70px;
 		margin: 0.25rem;
@@ -98,7 +98,7 @@
 		background-color: rgb(16, 169, 250);
 		border-color: rgb(16, 169, 250);
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 29px;
 		height: 70px;
 		width: 70px;
 		margin: 0.25rem;
@@ -109,7 +109,7 @@
 		border-color: rgb(160, 160, 160);
 		color: black;
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 29px;
 		height: 70px;
 		width: 70px;
 		margin: 0.25rem;
@@ -121,7 +121,7 @@
 		background-color: rgb(49, 49, 49);
 		border-color: rgb(49, 49, 49);
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 29px;
 		height: 60px;
 		width: 60px;
 		margin: 0.25rem;
@@ -131,7 +131,7 @@
 		background-color: rgb(16, 169, 250);
 		border-color: rgb(16, 169, 250);
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 29px;
 		height: 60px;
 		width: 60px;
 		margin: 0.25rem;
@@ -142,14 +142,14 @@
 		border-color: rgb(160, 160, 160);
 		color: black;
 		font-weight: 500;
-		font-size: 25px;
+		font-size: 29px;
 		height: 60px;
 		width: 60px;
 		margin: 0.25rem;
 	}
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 429px) {
 	.display {
 		font-size: 45px;
 		width: 270px;

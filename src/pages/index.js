@@ -20,7 +20,7 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className={` ${inter.className}`}>
+			<main className={` ${inter.className} d-flex flex-column`}>
 				<HeaderComponent />
 				<Calculator />
 
