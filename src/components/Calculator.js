@@ -19,9 +19,21 @@ function Calculator() {
 
 	const handleCalculate = () => {
 		try {
-			setResult(eval(result).toString());
+			const calcResult = eval(result);
+
+			if (Number.isFinite(calcResult)) {
+				setResult(calcResult.toString());
+			} else {
+				setResult("Invalid");
+			}
 		} catch (err) {
 			setResult("Error");
+		}
+	};
+
+	const handleKeyPress = (event) => {
+		if (event.key === "Enter") {
+			handleCalculate();
 		}
 	};
 
@@ -29,12 +41,19 @@ function Calculator() {
 		if (result === "Error") {
 			const timer = setTimeout(() => {
 				setResult("");
-			}, 2000);
+			}, 1000);
 
 			return () => clearTimeout(timer);
 		}
 	}, [result]);
 
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setResult("");
+		}, 3000);
+
+		return () => clearTimeout(timer);
+	}, [result]);
 	return (
 		<div
 			className={`container-sm d-flex flex-column justify-content-center align-items-center pt-2`}>
@@ -45,7 +64,8 @@ function Calculator() {
 						className={`${styles.display} bg-black text-white border-0 rounded`}
 						style={{ textAlign: "right" }}
 						value={result}
-						readOnly
+						onChange={(event) => setResult(event.target.value)}
+						onKeyDown={handleKeyPress}
 					/>
 				</div>
 				<div className="row mt-3">
