@@ -12,14 +12,14 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>ReactJS Calculator</title>
+				<title>Online Calculator</title>
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1"
 				/>
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="/calculator.png" />
 			</Head>
-			<main className={` ${inter.className} d-flex flex-column`}>
+			<main className={`${inter.className} d-flex flex-column`}>
 				<HeaderComponent />
 				<Calculator />
 

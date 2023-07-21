@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterComponent = (props) => {
 	return (
-		<div id="footer" className="bg-transparent mt-5">
+		<div id="footer" className="bg-transparent mt-4">
 			<div className="container">
 				<footer className="d-flex flex-wrap justify-content-between align-items-center py-3">
 					<div className="col-md-4 d-flex align-items-center">

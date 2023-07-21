@@ -37,15 +37,17 @@ function Calculator() {
 		}
 	};
 
-	useEffect(() => {
-		if (result === "Error") {
-			const timer = setTimeout(() => {
-				setResult("");
-			}, 1000);
+	const isValidInput = (input) => {
+		const allowedInputRegex = /^[0-9+\-*/.%()\b]*$/;
+		return allowedInputRegex.test(input);
+	};
 
-			return () => clearTimeout(timer);
+	const handleChange = (event) => {
+		const inputValue = event.target.value;
+		if (isValidInput(inputValue)) {
+			setResult(inputValue);
 		}
-	}, [result]);
+	};
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
@@ -54,17 +56,19 @@ function Calculator() {
 
 		return () => clearTimeout(timer);
 	}, [result]);
+
 	return (
 		<div
 			className={`container-sm d-flex flex-column justify-content-center align-items-center pt-2`}>
-			<div className="bg-black rounded-5 p-4 d-flex flex-column justify-content-center">
+			<div
+				className={`bg-black rounded-5 p-4 d-flex flex-column justify-content-center mt-4`}>
 				<div>
 					<input
 						type="text"
 						className={`${styles.display} bg-black text-white border-0 rounded`}
 						style={{ textAlign: "right" }}
 						value={result}
-						onChange={(event) => setResult(event.target.value)}
+						onChange={handleChange}
 						onKeyDown={handleKeyPress}
 					/>
 				</div>

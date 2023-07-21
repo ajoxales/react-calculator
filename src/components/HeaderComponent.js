@@ -12,7 +12,7 @@ const HeaderComponent = (props) => {
 					<span
 						id="title"
 						className={`${styles.title} text-light fs-5`}>
-						ReactJS Calculator
+						Calculator
 					</span>
 				</div>
 			</nav>
